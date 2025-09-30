@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aegis Vault - Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">Aegis Vault</div>
+    <div class="nav-links">
+      <a href="/">Login</a>
+      <a href="/dashboard">Console</a>
+    </div>
+  </nav>
+
+  <main class="layout">
+    <section class="card">
+      <h2 class="title">Login :)</h2>
+      <form method="POST" action="/login" class="form">
+        <input type="text" name="username" placeholder="Usuário" required autocomplete="username">
+        <input type="password" name="password" placeholder="Senha" required autocomplete="current-password">
+        <button type="submit" class="btn">Entrar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
